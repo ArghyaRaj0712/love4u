@@ -1,0 +1,174 @@
+p, a {
+  font-size: 16px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+}
+
+section {
+  padding: 100px 0;
+}
+
+.section-header {
+  text-align: center;
+}
+
+.section-header h2 {
+  font-size: 70px;
+}
+
+.section-header p {
+  width: 40%;
+  font-size: 22px;
+  margin: 0 auto;
+}
+
+header {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(154, 176, 212, 0.9)), to(rgba(217, 134, 180, 0.9)));
+  background: linear-gradient(to right, rgba(154, 176, 212, 0.9), rgba(217, 134, 180, 0.9));
+  position: relative;
+  z-index: 1;
+}
+
+header .menu .navbar-light {
+  padding-top: 20px;
+}
+
+header .menu .navbar-light .navbar-brand img {
+  width: 100px;
+}
+
+header .menu .navbar-light .navbar-nav .active > .nav-link {
+  color: #fff;
+}
+
+header .menu .navbar-light .navbar-nav .nav-link {
+  color: #fc028be1;
+  font-size: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  text-transform: capitalize;
+  transition: 0.7s;
+  -webkit-transition: 0.7s;
+  -moz-transition: 0.7s;
+  -ms-transition: 0.7s;
+  -o-transition: 0.7s;
+}
+
+header .menu .navbar-light .navbar-nav .nav-link:hover {
+  color: #fff;
+}
+
+header .header-info {
+  padding: 0px 0 80px 0;
+}
+
+header .header-info .left {
+  padding: 90px 50px;
+}
+
+header .header-info .left p {
+  font-size: 23px;
+  margin-top: 25px;
+}
+
+.header-bottom .info {
+  margin: 70px 50px;
+}
+
+.header-bottom .info h3 {
+  font-size: 60px;
+  color: #000;
+}
+
+.header-bottom .info h2 {
+  font-size: 95px;
+}
+
+.header-bottom .info a {
+  color: #000;
+  text-decoration: none;
+}
+
+.header-bottom .info a:hover {
+  color: #EF76AA;
+  transition: 0.7s;
+  -webkit-transition: 0.7s;
+  -moz-transition: 0.7s;
+  -ms-transition: 0.7s;
+  -o-transition: 0.7s;
+}
+
+.header-bottom .info hr {
+  width: 20%;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #EF76AA;
+  margin: 5px 10px;
+}
+
+.header-bottom .info .second-hr {
+  margin: 5px 0;
+}
+
+.header-bottom .header-bottom-form {
+  z-index: 2;
+  position: relative;
+  padding: 40px;
+  background: #fff;
+  -webkit-box-shadow: 0px 3px 12px 0px #EBEBEB;
+          box-shadow: 0px 3px 12px 0px #EBEBEB;
+  margin-top: -60px;
+}
+
+.header-bottom .header-bottom-form form label, .header-bottom .header-bottom-form form select, .header-bottom .header-bottom-form form input {
+  width: 100%;
+  font-family: 'Josefin Sans', sans-serif;
+  margin-bottom: 20px;
+}
+
+.header-bottom .header-bottom-form form label {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.header-bottom .header-bottom-form form select, .header-bottom .header-bottom-form form input {
+  padding: 10px;
+  background-color: #EF76AA;
+  color: #fff;
+  border: transparent;
+}
+
+.header-bottom .header-bottom-form form select:focus, .header-bottom .header-bottom-form form input:focus {
+  outline: none;
+}
+
+.header-bottom .header-bottom-form form input.button {
+  margin-top: 20px;
+}
+
+.header-bottom .header-bottom-form form ::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.header-bottom .header-bottom-form form :-ms-input-placeholder {
+  color: #fff;
+}
+
+.header-bottom .header-bottom-form form ::-ms-input-placeholder {
+  color: #fff;
+}
+
+.header-bottom .header-bottom-form form ::placeholder {
+  color: #fff;
+}
+
+.header-bottom .header-bottom-form form i {
+  font-size: 30px;
+  color: #EF76AA;
+  margin-top: 10px;
+}
+/*# sourceMappingURL=style.css.map */
