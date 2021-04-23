@@ -295,10 +295,73 @@ header {
         .box-img {
             position: relative;
             z-index: 2;
-            // margin-left: -120px;
-            // margin-top: 50px;
             background: $bg-color;
             padding: 5px;
         }
     }
+}
+
+.apps {
+    background: linear-gradient(to right, rgba(217, 134, 180, 0.8), rgba(217, 134, 180, 0.8)), url(../img/bg/bg.png);
+    color: $hover-color;
+
+    .apps-img {
+        margin-top: 40px;
+
+        img {
+            width: 200px;
+        }
+    }
+}
+
+.story {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../img/bg/bg-01.png);
+    background-position: top;
+    background-size: cover;
+
+    .section-header {
+        p {
+            width: 100%;
+        }
+    }
+
+    .story-box {
+        margin-top: 60px;
+        
+        .story-img {
+            position: relative;
+            z-index: 1;
+            border: 3px solid $bg-color;
+
+            img {
+                position: relative;
+                z-index: 2;
+                border: 3px solid $bg-color;
+                margin-left: 35px;
+                margin-top: 35px;
+                margin-bottom: -35px;
+            }
+        }
+
+        .story-info {
+            margin: 60px;
+
+            h4 {
+                font-weight: 700;
+                font-size: 35px;
+            }
+    
+            span {
+                font-size: 18px;
+                font-family: 'Josefin Sans', sans-serif;
+            }
+    
+            p {
+                margin-top: 20px;
+                font-size: 23px;
+                text-align: justify;
+            }
+        }
+    }
+    
 }
