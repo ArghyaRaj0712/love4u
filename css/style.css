@@ -84,25 +84,30 @@ header .header-info .left p {
   margin-top: 25px;
 }
 
-.header-bottom .info {
+.header-bottom .header-bottom-box {
+  position: relative;
+  z-index: 3;
+}
+
+.header-bottom .header-bottom-box .info {
   margin: 70px 50px;
 }
 
-.header-bottom .info h3 {
+.header-bottom .header-bottom-box .info h3 {
   font-size: 60px;
   color: #000;
 }
 
-.header-bottom .info h2 {
+.header-bottom .header-bottom-box .info h2 {
   font-size: 95px;
 }
 
-.header-bottom .info a {
+.header-bottom .header-bottom-box .info a {
   color: #000;
   text-decoration: none;
 }
 
-.header-bottom .info a:hover {
+.header-bottom .header-bottom-box .info a:hover {
   color: #EF76AA;
   transition: 0.7s;
   -webkit-transition: 0.7s;
@@ -111,18 +116,18 @@ header .header-info .left p {
   -o-transition: 0.7s;
 }
 
-.header-bottom .info hr {
+.header-bottom .header-bottom-box .info hr {
   width: 20%;
   border-top: 2px solid #fff;
   border-bottom: 2px solid #EF76AA;
   margin: 5px 10px;
 }
 
-.header-bottom .info .second-hr {
+.header-bottom .header-bottom-box .info .second-hr {
   margin: 5px 0;
 }
 
-.header-bottom .header-bottom-form {
+.header-bottom .header-bottom-box .header-bottom-form {
   z-index: 2;
   position: relative;
   padding: 40px;
@@ -132,52 +137,72 @@ header .header-info .left p {
   margin-top: -60px;
 }
 
-.header-bottom .header-bottom-form form label, .header-bottom .header-bottom-form form select, .header-bottom .header-bottom-form form input {
+.header-bottom .header-bottom-box .header-bottom-form form label, .header-bottom .header-bottom-box .header-bottom-form form select, .header-bottom .header-bottom-box .header-bottom-form form input {
   width: 100%;
   font-family: 'Josefin Sans', sans-serif;
   margin-bottom: 20px;
 }
 
-.header-bottom .header-bottom-form form label {
+.header-bottom .header-bottom-box .header-bottom-form form label {
   font-weight: bold;
   font-size: 20px;
 }
 
-.header-bottom .header-bottom-form form select, .header-bottom .header-bottom-form form input {
+.header-bottom .header-bottom-box .header-bottom-form form select, .header-bottom .header-bottom-box .header-bottom-form form input {
   padding: 10px;
   background-color: #EF76AA;
   color: #fff;
   border: transparent;
 }
 
-.header-bottom .header-bottom-form form select:focus, .header-bottom .header-bottom-form form input:focus {
+.header-bottom .header-bottom-box .header-bottom-form form select:focus, .header-bottom .header-bottom-box .header-bottom-form form input:focus {
   outline: none;
 }
 
-.header-bottom .header-bottom-form form input.button {
+.header-bottom .header-bottom-box .header-bottom-form form input.button {
   margin-top: 20px;
 }
 
-.header-bottom .header-bottom-form form ::-webkit-input-placeholder {
+.header-bottom .header-bottom-box .header-bottom-form form ::-webkit-input-placeholder {
   color: #fff;
 }
 
-.header-bottom .header-bottom-form form :-ms-input-placeholder {
+.header-bottom .header-bottom-box .header-bottom-form form :-ms-input-placeholder {
   color: #fff;
 }
 
-.header-bottom .header-bottom-form form ::-ms-input-placeholder {
+.header-bottom .header-bottom-box .header-bottom-form form ::-ms-input-placeholder {
   color: #fff;
 }
 
-.header-bottom .header-bottom-form form ::placeholder {
+.header-bottom .header-bottom-box .header-bottom-form form ::placeholder {
   color: #fff;
 }
 
-.header-bottom .header-bottom-form form i {
+.header-bottom .header-bottom-box .header-bottom-form form i {
   font-size: 30px;
   color: #EF76AA;
   margin-top: 10px;
+}
+
+.header-bottom .layer-img img {
+  width: 300px;
+  position: relative;
+  z-index: 1;
+  margin-left: 280px;
+  margin-top: -410px;
+}
+
+.happyCouple {
+  position: relative;
+  z-index: 2;
+}
+
+.happyCouple .happyCouple-layer-img img {
+  width: 300px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: -430px;
 }
 
 .happyCouple .box {
@@ -315,6 +340,11 @@ header .header-info .left p {
   background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../img/bg/bg-01.png);
   background-position: top;
   background-size: cover;
+}
+
+.story .story-layer-img img {
+  margin-top: -173px;
+  float: right;
 }
 
 .story .section-header p {

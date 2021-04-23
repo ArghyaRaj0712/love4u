@@ -99,95 +99,124 @@ header {
 
 .header-bottom {
 
-    .info {
-        margin: 70px 50px;
+    .header-bottom-box {
+        position: relative;
+        z-index: 3;
 
-        h3 {
-            font-size: 60px;
-            color: $secondText-color;
-        }
-
-        h2 {
-            font-size: 95px;
-        }
-
-        a {
-            color: $secondText-color;
-            text-decoration: none;
-            
-            &:hover {
-                color: $bg-color;
-                transition: 0.7s;
-                -webkit-transition: 0.7s;
-                -moz-transition: 0.7s;
-                -ms-transition: 0.7s;
-                -o-transition: 0.7s;
+        .info {
+            margin: 70px 50px;
+    
+            h3 {
+                font-size: 60px;
+                color: $secondText-color;
+            }
+    
+            h2 {
+                font-size: 95px;
+            }
+    
+            a {
+                color: $secondText-color;
+                text-decoration: none;
+                
+                &:hover {
+                    color: $bg-color;
+                    transition: 0.7s;
+                    -webkit-transition: 0.7s;
+                    -moz-transition: 0.7s;
+                    -ms-transition: 0.7s;
+                    -o-transition: 0.7s;
+                }
+            }
+    
+            hr {
+                width: 20%;
+                border-top: 2px solid $hover-color;
+                border-bottom: 2px solid $bg-color;
+                margin: 5px 10px;  
+            }
+    
+            .second-hr {
+                margin: 5px 0;
             }
         }
-
-        hr {
-            width: 20%;
-            border-top: 2px solid $hover-color;
-            border-bottom: 2px solid $bg-color;
-            margin: 5px 10px;  
-        }
-
-        .second-hr {
-            margin: 5px 0;
+    
+        .header-bottom-form {
+            z-index: 2;
+            position: relative;
+            padding: 40px;
+            background: $hover-color;
+            box-shadow: 0px 3px 12px 0px #EBEBEB;
+            margin-top: -60px;
+    
+            form {
+                
+                label,select,input {
+                    width: 100%;
+                    font-family: 'Josefin Sans', sans-serif;
+                    margin-bottom: 20px;
+                }
+    
+                label {
+                    font-weight: bold;
+                    font-size: 20px;
+                    // color: $bg-color;
+                }
+    
+                select,input {
+                    padding: 10px;
+                    background-color: $bg-color;
+                    color: $hover-color;
+                    border: transparent;
+    
+                    &:focus {
+                        outline: none;
+                    }
+                }
+    
+                input.button {
+                    margin-top: 20px;
+                }
+    
+                ::placeholder {
+                    color: $hover-color;
+                }
+    
+                i {
+                    font-size: 30px;
+                    color: $bg-color;
+                    margin-top: 10px;
+                }
+            }
         }
     }
 
-    .header-bottom-form {
-        z-index: 2;
-        position: relative;
-        padding: 40px;
-        background: $hover-color;
-        box-shadow: 0px 3px 12px 0px #EBEBEB;
-        margin-top: -60px;
-
-        form {
-            
-            label,select,input {
-                width: 100%;
-                font-family: 'Josefin Sans', sans-serif;
-                margin-bottom: 20px;
-            }
-
-            label {
-                font-weight: bold;
-                font-size: 20px;
-                // color: $bg-color;
-            }
-
-            select,input {
-                padding: 10px;
-                background-color: $bg-color;
-                color: $hover-color;
-                border: transparent;
-
-                &:focus {
-                    outline: none;
-                }
-            }
-
-            input.button {
-                margin-top: 20px;
-            }
-
-            ::placeholder {
-                color: $hover-color;
-            }
-
-            i {
-                font-size: 30px;
-                color: $bg-color;
-                margin-top: 10px;
-            }
+    .layer-img {
+    
+        img {
+            width: 300px;
+            position: relative;
+            z-index: 1;
+            margin-left: 280px;
+            margin-top: -410px;
         }
     }
 }
 
+
+
 .happyCouple {
+    position: relative;
+    z-index: 2;
+
+    .happyCouple-layer-img {
+        img {
+            width: 300px;
+            position: relative;
+            z-index: 1;
+            margin-bottom: -430px;
+        }
+    }
     .box {
         margin-top: 60px;
 
@@ -323,7 +352,15 @@ header {
     background-position: top;
     background-size: cover;
 
+    .story-layer-img {
+        img {
+            margin-top: -173px;
+            float: right;
+        }
+    }
+
     .section-header {
+
         p {
             width: 100%;
         }
