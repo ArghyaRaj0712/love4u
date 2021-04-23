@@ -9,6 +9,10 @@ h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
+.responsive-img {
+  width: 100%;
+}
+
 section {
   padding: 100px 0;
 }
@@ -170,5 +174,121 @@ header .header-info .left p {
   font-size: 30px;
   color: #EF76AA;
   margin-top: 10px;
+}
+
+.happyCouple .box {
+  margin-top: 60px;
+}
+
+.happyCouple .box .box-hover-1:hover {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(217, 134, 180, 0.9)), to(rgba(217, 134, 180, 0.9))), url(../img/happuCouple/01.png);
+  background: linear-gradient(to right, rgba(217, 134, 180, 0.9), rgba(217, 134, 180, 0.9)), url(../img/happuCouple/01.png);
+}
+
+.happyCouple .box .box-hover-2:hover {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(217, 134, 180, 0.9)), to(rgba(217, 134, 180, 0.9))), url(../img/happuCouple/02.png);
+  background: linear-gradient(to right, rgba(217, 134, 180, 0.9), rgba(217, 134, 180, 0.9)), url(../img/happuCouple/02.png);
+}
+
+.happyCouple .box .box-hover-4:hover {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(217, 134, 180, 0.9)), to(rgba(217, 134, 180, 0.9))), url(../img/happuCouple/04.png);
+  background: linear-gradient(to right, rgba(217, 134, 180, 0.9), rgba(217, 134, 180, 0.9)), url(../img/happuCouple/04.png);
+}
+
+.happyCouple .box .box-info {
+  position: relative;
+  z-index: 1;
+  -webkit-box-shadow: 0px 3px 12px 0px #EBEBEB;
+          box-shadow: 0px 3px 12px 0px #EBEBEB;
+  padding: 60px 90px 60px 40px;
+  background-color: #fff;
+}
+
+.happyCouple .box .box-info:hover {
+  background-position: center;
+  color: #fff;
+  z-index: 3;
+  padding: 60px;
+}
+
+.happyCouple .box .box-info:hover a {
+  color: #fff;
+}
+
+.happyCouple .box .box-info h4 {
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+.happyCouple .box .box-info span {
+  font-size: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.happyCouple .box .box-info p {
+  margin-top: 20px;
+}
+
+.happyCouple .box .box-info a {
+  text-decoration: none;
+}
+
+.happyCouple .box .box-img {
+  position: relative;
+  z-index: 2;
+  margin-left: -120px;
+  margin-top: 50px;
+  background: #EF76AA;
+  padding: 5px;
+}
+
+.happyCouple .box-3 {
+  margin-top: 100px;
+}
+
+.happyCouple .box-3 .box-info {
+  position: relative;
+  z-index: 3;
+  -webkit-box-shadow: 0px 3px 12px 0px #EBEBEB;
+          box-shadow: 0px 3px 12px 0px #EBEBEB;
+  padding: 60px;
+  margin-left: -120px;
+  margin-top: 100px;
+  background-color: #fff;
+}
+
+.happyCouple .box-3 .box-info:hover {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(217, 134, 180, 0.9)), to(rgba(217, 134, 180, 0.9))), url(../img/happuCouple/03.png);
+  background: linear-gradient(to right, rgba(217, 134, 180, 0.9), rgba(217, 134, 180, 0.9)), url(../img/happuCouple/03.png);
+  color: #fff;
+}
+
+.happyCouple .box-3 .box-info:hover a {
+  color: #fff;
+}
+
+.happyCouple .box-3 .box-info h4 {
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+.happyCouple .box-3 .box-info span {
+  font-size: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.happyCouple .box-3 .box-info p {
+  margin-top: 20px;
+}
+
+.happyCouple .box-3 .box-info a {
+  text-decoration: none;
+}
+
+.happyCouple .box-3 .box-img {
+  position: relative;
+  z-index: 2;
+  background: #EF76AA;
+  padding: 5px;
 }
 /*# sourceMappingURL=style.css.map */

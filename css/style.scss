@@ -17,6 +17,10 @@ h2,h3,h4,h5,h6 {
     font-weight: 700;
 }
 
+.responsive-img {
+    width: 100%;
+}
+
 section {
     padding: 100px 0;
 }
@@ -175,6 +179,126 @@ header {
                 color: $bg-color;
                 margin-top: 10px;
             }
+        }
+    }
+}
+
+.happyCouple {
+    .box {
+        margin-top: 60px;
+
+        .box-hover-1 {
+            &:hover {
+                background: linear-gradient(to right, rgba(217, 134, 180, 0.9), rgba(217, 134, 180, 0.9)), url(../img/happuCouple/01.png);
+            }
+        }
+
+        .box-hover-2 {
+            &:hover {
+                background: linear-gradient(to right, rgba(217, 134, 180, 0.9), rgba(217, 134, 180, 0.9)), url(../img/happuCouple/02.png);
+            }
+        }
+
+        .box-hover-4 {
+            &:hover {
+                background: linear-gradient(to right, rgba(217, 134, 180, 0.9), rgba(217, 134, 180, 0.9)), url(../img/happuCouple/04.png);
+            }
+        }
+
+        .box-info {
+            position: relative;
+            z-index: 1;
+            box-shadow: 0px 3px 12px 0px #EBEBEB;
+            padding: 60px 90px 60px 40px;
+            background-color: $hover-color;
+
+            &:hover {
+                background-position: center;
+                color: $hover-color;
+                z-index: 3;
+                padding: 60px;
+                a {
+                    color: $hover-color;
+                }
+            }
+
+            h4 {
+                font-weight: 700;
+                margin-bottom: 0px;
+            }
+
+            span {
+                font-size: 10px;
+                font-family: 'Josefin Sans', sans-serif;
+            }
+            
+            p {
+                margin-top: 20px;
+            }
+
+            a {
+                text-decoration: none;
+            }
+        }
+
+        .box-img {
+            position: relative;
+            z-index: 2;
+            margin-left: -120px;
+            margin-top: 50px;
+            background: $bg-color;
+            padding: 5px;
+        }
+    }
+
+    .box-3 {
+        margin-top: 100px;
+
+        .box-info {
+            position: relative;
+            z-index: 3;
+            box-shadow: 0px 3px 12px 0px #EBEBEB;
+            // padding: 60px 90px 60px 40px;
+            padding: 60px;
+            margin-left: -120px;
+            margin-top: 100px;
+            background-color: $hover-color;
+
+            &:hover {
+                background: linear-gradient(to right, rgba(217, 134, 180, 0.9), rgba(217, 134, 180, 0.9)), url(../img/happuCouple/03.png);
+                color: $hover-color;
+
+                a {
+                    color: $hover-color;
+                }
+            }
+
+            h4 {
+                font-weight: 700;
+                margin-bottom: 0px;
+            }
+
+            span {
+                font-size: 10px;
+                font-family: 'Josefin Sans', sans-serif;
+            }
+            
+            p {
+                margin-top: 20px;
+            }
+
+            a {
+                text-decoration: none;
+            }
+        }
+
+        .box-img {
+            position: relative;
+            z-index: 2;
+            // margin-left: -120px;
+            // margin-top: 50px;
+            background: $bg-color;
+            padding: 5px;
         }
     }
 }
