@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 p, a {
   font-size: 16px;
   font-family: 'Josefin Sans', sans-serif;
@@ -354,5 +358,77 @@ header .header-info .left p {
   margin-top: 20px;
   font-size: 23px;
   text-align: justify;
+}
+
+.review {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(195, 228, 244, 0.9)), to(rgba(195, 228, 244, 0.9))), url(../img/bg/bg-02.png);
+  background: linear-gradient(to right, rgba(195, 228, 244, 0.9), rgba(195, 228, 244, 0.9)), url(../img/bg/bg-02.png);
+  background-size: cover;
+}
+
+.review .review-slide {
+  text-align: center;
+}
+
+.review .review-slide h2 {
+  font-size: 70px;
+}
+
+.review .review-slide .slider-iteam {
+  margin-top: 40px;
+}
+
+.review .review-slide .slider-iteam .slide-img {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.review .review-slide .slider-iteam p {
+  font-size: 20px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+footer {
+  padding: 50px 0;
+  text-align: center;
+}
+
+footer .social-link {
+  margin-top: 20px;
+}
+
+footer .social-link ul {
+  margin: 0;
+  padding: 0;
+}
+
+footer .social-link ul li {
+  display: inline-block;
+  margin: 10px;
+}
+
+footer .social-link ul li a {
+  color: #fff;
+}
+
+footer .social-link ul li a i::before {
+  background-color: #EF76AA;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+footer .social-link ul li a:hover i::before {
+  background: #223244;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 /*# sourceMappingURL=style.css.map */
