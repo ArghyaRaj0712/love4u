@@ -6,6 +6,7 @@ $text-color: #223244;
 $secondText-color: #000;
 $hover-color: #fff;
 
+/* Main Styel */
 html {
     scroll-behavior: smooth;
 }
@@ -29,6 +30,7 @@ section {
     padding: 100px 0;
 }
 
+// Section Header
 .section-header {
     text-align: center;
 
@@ -43,26 +45,28 @@ section {
     }
 }
 
+/* Header Start */
 header {
     background: linear-gradient(to right, rgba(154,176,212, 0.9), rgba(217, 134, 180, 0.9));
     position: relative;
     z-index: 1;
-
+    // Menu
     .menu {
         .navbar-light {
             padding-top: 20px;
-    
+            // logo
             .navbar-brand {
                 img {
                     width: 100px;
                 }
             }
-    
+            // NavBar
             .navbar-nav {
+                // Active Nav
                 .active>.nav-link {
                     color: $hover-color;
                 }
-    
+                // Nav Item
                 .nav-link {
                     color: $nav-color;
                     font-size: 20px;
@@ -82,10 +86,10 @@ header {
             }
         }
     }
-
+    // Header-info
     .header-info {
         padding: 0px 0 80px 0;
-
+        // Left Side
         .left {
             padding: 90px 50px;
 
@@ -97,12 +101,15 @@ header {
     }
 }
 
+/* Header-bottom Start */
 .header-bottom {
 
+    // header-bottom-box
     .header-bottom-box {
         position: relative;
-        z-index: 3;
+        z-index: 4;
 
+        // Info
         .info {
             margin: 70px 50px;
     
@@ -141,6 +148,7 @@ header {
             }
         }
     
+        // header-bottom-form
         .header-bottom-form {
             z-index: 2;
             position: relative;
@@ -149,6 +157,7 @@ header {
             box-shadow: 0px 3px 12px 0px #EBEBEB;
             margin-top: -60px;
     
+            // Form
             form {
                 
                 label,select,input {
@@ -178,6 +187,7 @@ header {
                     margin-top: 20px;
                 }
     
+                // PlaceHolder
                 ::placeholder {
                     color: $hover-color;
                 }
@@ -191,256 +201,281 @@ header {
         }
     }
 
+    // Layer Image
     .layer-img {
-    
+        position: relative;
+        z-index: 3;
+        margin-left: 280px;
+        margin-top: -320px;
+
         img {
             width: 300px;
-            position: relative;
-            z-index: 1;
-            margin-left: 280px;
-            margin-top: -410px;
         }
     }
 }
 
+/* Main */
+main {
+    /* Happy Couple */
+    .happyCouple {
+        position: relative;
+        z-index: 2;
+        padding: 100px 0;
 
-
-.happyCouple {
-    position: relative;
-    z-index: 2;
-
-    .happyCouple-layer-img {
-        img {
-            width: 300px;
-            position: relative;
-            z-index: 1;
-            margin-bottom: -430px;
-        }
-    }
-    .box {
-        margin-top: 60px;
-
-        .box-hover-1 {
-            &:hover {
-                background: linear-gradient(to right, rgba(217, 134, 180, 0.9), rgba(217, 134, 180, 0.9)), url(../img/happuCouple/01.png);
-            }
-        }
-
-        .box-hover-2 {
-            &:hover {
-                background: linear-gradient(to right, rgba(217, 134, 180, 0.9), rgba(217, 134, 180, 0.9)), url(../img/happuCouple/02.png);
-            }
-        }
-
-        .box-hover-4 {
-            &:hover {
-                background: linear-gradient(to right, rgba(217, 134, 180, 0.9), rgba(217, 134, 180, 0.9)), url(../img/happuCouple/04.png);
-            }
-        }
-
-        .box-info {
-            position: relative;
-            z-index: 1;
-            box-shadow: 0px 3px 12px 0px #EBEBEB;
-            padding: 60px 90px 60px 40px;
-            background-color: $hover-color;
-
-            &:hover {
-                background-position: center;
-                color: $hover-color;
-                z-index: 3;
-                padding: 60px;
-                a {
-                    color: $hover-color;
-                }
-            }
-
-            h4 {
-                font-weight: 700;
-                margin-bottom: 0px;
-            }
-
-            span {
-                font-size: 10px;
-                font-family: 'Josefin Sans', sans-serif;
-            }
-            
-            p {
-                margin-top: 20px;
-            }
-
-            a {
-                text-decoration: none;
-            }
-        }
-
-        .box-img {
-            position: relative;
-            z-index: 2;
-            margin-left: -120px;
-            margin-top: 50px;
-            background: $bg-color;
-            padding: 5px;
-        }
-    }
-
-    .box-3 {
-        margin-top: 100px;
-
-        .box-info {
-            position: relative;
-            z-index: 3;
-            box-shadow: 0px 3px 12px 0px #EBEBEB;
-            // padding: 60px 90px 60px 40px;
-            padding: 60px;
-            margin-left: -120px;
-            margin-top: 100px;
-            background-color: $hover-color;
-
-            &:hover {
-                background: linear-gradient(to right, rgba(217, 134, 180, 0.9), rgba(217, 134, 180, 0.9)), url(../img/happuCouple/03.png);
-                color: $hover-color;
-
-                a {
-                    color: $hover-color;
-                }
-            }
-
-            h4 {
-                font-weight: 700;
-                margin-bottom: 0px;
-            }
-
-            span {
-                font-size: 10px;
-                font-family: 'Josefin Sans', sans-serif;
-            }
-            
-            p {
-                margin-top: 20px;
-            }
-
-            a {
-                text-decoration: none;
-            }
-        }
-
-        .box-img {
-            position: relative;
-            z-index: 2;
-            background: $bg-color;
-            padding: 5px;
-        }
-    }
-}
-
-.apps {
-    background: linear-gradient(to right, rgba(217, 134, 180, 0.8), rgba(217, 134, 180, 0.8)), url(../img/bg/bg.png);
-    color: $hover-color;
-
-    .apps-img {
-        margin-top: 40px;
-
-        img {
-            width: 200px;
-        }
-    }
-}
-
-.story {
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../img/bg/bg-01.png);
-    background-position: top;
-    background-size: cover;
-
-    .story-layer-img {
-        img {
-            margin-top: -173px;
-            float: right;
-        }
-    }
-
-    .section-header {
-
-        p {
-            width: 100%;
-        }
-    }
-
-    .story-box {
-        margin-top: 60px;
-        
-        .story-img {
-            position: relative;
-            z-index: 1;
-            border: 3px solid $bg-color;
-
+        // happyCouple-layer-img
+        .happyCouple-layer-img {
             img {
+                width: 300px;
+                position: relative;
+                z-index: 1;
+                margin-bottom: -490px;
+            }
+        }
+        // Box
+        .box {
+            margin-top: 60px;
+
+            .box-hover-1 {
+                &:hover {
+                    background: linear-gradient(to right, rgba(217, 134, 180, 0.9), rgba(217, 134, 180, 0.9)), url(../img/happuCouple/01.png);
+                }
+            }
+
+            .box-hover-2 {
+                &:hover {
+                    background: linear-gradient(to right, rgba(217, 134, 180, 0.9), rgba(217, 134, 180, 0.9)), url(../img/happuCouple/02.png);
+                }
+            }
+
+            .box-hover-4 {
+                &:hover {
+                    background: linear-gradient(to right, rgba(217, 134, 180, 0.9), rgba(217, 134, 180, 0.9)), url(../img/happuCouple/04.png);
+                }
+            }
+
+            // Box-Info
+            .box-info {
+                position: relative;
+                z-index: 1;
+                box-shadow: 0px 3px 12px 0px #EBEBEB;
+                padding: 60px 90px 60px 40px;
+                background-color: $hover-color;
+
+                &:hover {
+                    background-position: center;
+                    color: $hover-color;
+                    z-index: 3;
+                    padding: 60px;
+                    a {
+                        color: $hover-color;
+                    }
+                }
+
+                h4 {
+                    font-weight: 700;
+                    margin-bottom: 0px;
+                }
+
+                span {
+                    font-size: 10px;
+                    font-family: 'Josefin Sans', sans-serif;
+                }
+                
+                p {
+                    margin-top: 20px;
+                }
+
+                a {
+                    text-decoration: none;
+                }
+            }
+
+            // Box Image
+            .box-img {
                 position: relative;
                 z-index: 2;
-                border: 3px solid $bg-color;
-                margin-left: 35px;
-                margin-top: 35px;
-                margin-bottom: -35px;
+                margin-left: -120px;
+                margin-top: 50px;
+                background: $bg-color;
+                padding: 5px;
             }
         }
 
-        .story-info {
-            margin: 60px;
+        // Box 03
+        .box-3 {
+            margin-top: 100px;
 
-            h4 {
-                font-weight: 700;
-                font-size: 35px;
+            // Box Info
+            .box-info {
+                position: relative;
+                z-index: 3;
+                box-shadow: 0px 3px 12px 0px #EBEBEB;
+                padding: 60px;
+                margin-left: -120px;
+                margin-top: 100px;
+                background-color: $hover-color;
+
+                &:hover {
+                    background: linear-gradient(to right, rgba(217, 134, 180, 0.9), rgba(217, 134, 180, 0.9)), url(../img/happuCouple/03.png);
+                    color: $hover-color;
+
+                    a {
+                        color: $hover-color;
+                    }
+                }
+
+                h4 {
+                    font-weight: 700;
+                    margin-bottom: 0px;
+                }
+
+                span {
+                    font-size: 10px;
+                    font-family: 'Josefin Sans', sans-serif;
+                }
+                
+                p {
+                    margin-top: 20px;
+                }
+
+                a {
+                    text-decoration: none;
+                }
             }
-    
-            span {
-                font-size: 18px;
-                font-family: 'Josefin Sans', sans-serif;
-            }
-    
-            p {
-                margin-top: 20px;
-                font-size: 23px;
-                text-align: justify;
+
+            // Box Image
+            .box-img {
+                position: relative;
+                z-index: 2;
+                background: $bg-color;
+                padding: 5px;
             }
         }
     }
-}
 
-.review {
-    background: linear-gradient(to right, rgba(195,228,244, 0.9), rgba(195,228,244, 0.9)), url(../img/bg/bg-02.png);
-    background-size: cover;
+    /* Apps */
+    .apps {
+        background: linear-gradient(to right, rgba(217, 134, 180, 0.8), rgba(217, 134, 180, 0.8)), url(../img/bg/bg.png);
+        color: $hover-color;
 
-    .review-slide {
-        text-align: center;
-
-        h2 {
-            font-size: 70px;
-        }
-
-        .slider-iteam {
+        .apps-img {
             margin-top: 40px;
 
-            .slide-img {
-                width: 80px;
-                height: 80px;
-                margin: 0 auto;
-                margin-bottom: 10px;
+            img {
+                width: 200px;
             }
+        }
+    }
+
+
+
+    /* Story */
+    .story {
+        background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../img/bg/bg-01.png);
+        background-position: top;
+        background-size: cover;
+        position: relative;
+        z-index: 2;
+
+        // story-layer-img
+        .story-layer-img {
+    
+            img {
+                float: right;
+                position: relative;
+                z-index: 1;
+                margin-top: -170px;
+            }
+        }
+
+        // section-header 
+        .section-header {
 
             p {
-                font-size: 20px;
-                width: 80%;
-                margin: 0 auto;
+                width: 100%;
+            }
+        }
+
+        // story-box
+        .story-box {
+            margin-top: 60px;
+            
+            // story-img
+            .story-img {
+                border: 3px solid $bg-color;
+
+                img {
+                    border: 3px solid $bg-color;
+                    margin-left: 35px;
+                    margin-top: 35px;
+                    margin-bottom: -35px;
+                }
+            }
+
+            // story-info
+            .story-info {
+                margin: 60px;
+
+                h4 {
+                    font-weight: 700;
+                    font-size: 35px;
+                }
+        
+                span {
+                    font-size: 18px;
+                    font-family: 'Josefin Sans', sans-serif;
+                }
+        
+                p {
+                    margin-top: 20px;
+                    font-size: 23px;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+
+    /* Review */
+    .review {
+        background: linear-gradient(to right, rgba(195,228,244, 0.9), rgba(195,228,244, 0.9)), url(../img/bg/bg-02.png);
+        background-size: cover;
+    
+        // review-slide
+        .review-slide {
+            text-align: center;
+    
+            h2 {
+                font-size: 70px;
+            }
+    
+            // slider-iteam
+            .slider-iteam {
+                margin-top: 40px;
+    
+                // slide-img
+                .slide-img {
+                    width: 80px;
+                    height: 80px;
+                    margin: 0 auto;
+                    margin-bottom: 10px;
+                }
+    
+                p {
+                    font-size: 20px;
+                    width: 80%;
+                    margin: 0 auto;
+                }
             }
         }
     }
 }
 
-
+/* Footer*/
 footer {
     padding: 50px 0;
     text-align: center;
 
+    // social-link
     .social-link {
         margin-top: 20px;
 

@@ -1,0 +1,101 @@
+@media screen and (max-width: 640px) {
+  .section-header {
+    text-align: center;
+  }
+  .section-header h2 {
+    font-size: 50px;
+  }
+  .section-header p {
+    width: 90%;
+    font-size: 18px;
+  }
+  header .header-info .left {
+    padding: 90px 50px 0px 50px;
+  }
+  header .header-info .left p {
+    font-size: 16px;
+  }
+  .header-bottom .header-bottom-box .info h3 {
+    font-size: 28px;
+  }
+  .header-bottom .header-bottom-box .info h2 {
+    font-size: 50px;
+  }
+  .header-bottom .header-bottom-box .header-bottom-form {
+    margin-top: -40px;
+  }
+  .header-bottom .header-bottom-box .header-bottom-form form label, .header-bottom .header-bottom-box .header-bottom-form form select, .header-bottom .header-bottom-box .header-bottom-form form input {
+    margin-bottom: 10px;
+  }
+  .header-bottom .header-bottom-box .header-bottom-form form label {
+    font-size: 18px;
+  }
+  .header-bottom .header-bottom-box .header-bottom-form form i {
+    margin-bottom: 10px;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    margin-left: 50%;
+  }
+  .header-bottom .layer-img {
+    margin-left: 201px;
+    margin-top: -640px;
+    margin-bottom: 273px;
+  }
+  .header-bottom .layer-img img {
+    width: 200px;
+  }
+  main .happyCouple {
+    padding: 195px 0;
+  }
+  main .happyCouple .happyCouple-layer-img img {
+    width: 125px;
+    margin-bottom: -350px;
+  }
+  main .happyCouple .box .box-img {
+    margin-left: 100px;
+    margin-top: -50px;
+  }
+  main .happyCouple .box-3 .box-info {
+    margin-left: 100px;
+    margin-top: -175px;
+  }
+  main .apps .apps-img img {
+    width: 150px;
+  }
+  main .story .story-layer-img img {
+    margin-top: -171px;
+    width: 100px;
+  }
+  main .story .story-box {
+    margin-top: 40px;
+  }
+  main .story .story-box .story-img img {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: -15px;
+  }
+  main .story .story-box .story-info {
+    margin: 40px 20px;
+  }
+  main .story .story-box .story-info h4 {
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+  main .story .story-box .story-info span {
+    font-size: 12px;
+  }
+  main .story .story-box .story-info p {
+    font-size: 14px;
+  }
+  main .review .review-slide h2 {
+    font-size: 40px;
+  }
+  main .review .review-slide .slider-iteam p {
+    font-size: 16px;
+    width: 100%;
+  }
+  footer {
+    padding: 20px 0;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

@@ -1,3 +1,4 @@
+/* Main Styel */
 html {
   scroll-behavior: smooth;
 }
@@ -35,6 +36,7 @@ section {
   margin: 0 auto;
 }
 
+/* Header Start */
 header {
   background: -webkit-gradient(linear, left top, right top, from(rgba(154, 176, 212, 0.9)), to(rgba(217, 134, 180, 0.9)));
   background: linear-gradient(to right, rgba(154, 176, 212, 0.9), rgba(217, 134, 180, 0.9));
@@ -84,9 +86,10 @@ header .header-info .left p {
   margin-top: 25px;
 }
 
+/* Header-bottom Start */
 .header-bottom .header-bottom-box {
   position: relative;
-  z-index: 3;
+  z-index: 4;
 }
 
 .header-bottom .header-bottom-box .info {
@@ -185,46 +188,58 @@ header .header-info .left p {
   margin-top: 10px;
 }
 
+.header-bottom .layer-img {
+  position: relative;
+  z-index: 3;
+  margin-left: 280px;
+  margin-top: -320px;
+}
+
 .header-bottom .layer-img img {
   width: 300px;
-  position: relative;
-  z-index: 1;
-  margin-left: 280px;
-  margin-top: -410px;
 }
 
-.happyCouple {
+/* Main */
+main {
+  /* Happy Couple */
+  /* Apps */
+  /* Story */
+  /* Review */
+}
+
+main .happyCouple {
   position: relative;
   z-index: 2;
+  padding: 100px 0;
 }
 
-.happyCouple .happyCouple-layer-img img {
+main .happyCouple .happyCouple-layer-img img {
   width: 300px;
   position: relative;
   z-index: 1;
-  margin-bottom: -430px;
+  margin-bottom: -490px;
 }
 
-.happyCouple .box {
+main .happyCouple .box {
   margin-top: 60px;
 }
 
-.happyCouple .box .box-hover-1:hover {
+main .happyCouple .box .box-hover-1:hover {
   background: -webkit-gradient(linear, left top, right top, from(rgba(217, 134, 180, 0.9)), to(rgba(217, 134, 180, 0.9))), url(../img/happuCouple/01.png);
   background: linear-gradient(to right, rgba(217, 134, 180, 0.9), rgba(217, 134, 180, 0.9)), url(../img/happuCouple/01.png);
 }
 
-.happyCouple .box .box-hover-2:hover {
+main .happyCouple .box .box-hover-2:hover {
   background: -webkit-gradient(linear, left top, right top, from(rgba(217, 134, 180, 0.9)), to(rgba(217, 134, 180, 0.9))), url(../img/happuCouple/02.png);
   background: linear-gradient(to right, rgba(217, 134, 180, 0.9), rgba(217, 134, 180, 0.9)), url(../img/happuCouple/02.png);
 }
 
-.happyCouple .box .box-hover-4:hover {
+main .happyCouple .box .box-hover-4:hover {
   background: -webkit-gradient(linear, left top, right top, from(rgba(217, 134, 180, 0.9)), to(rgba(217, 134, 180, 0.9))), url(../img/happuCouple/04.png);
   background: linear-gradient(to right, rgba(217, 134, 180, 0.9), rgba(217, 134, 180, 0.9)), url(../img/happuCouple/04.png);
 }
 
-.happyCouple .box .box-info {
+main .happyCouple .box .box-info {
   position: relative;
   z-index: 1;
   -webkit-box-shadow: 0px 3px 12px 0px #EBEBEB;
@@ -233,36 +248,36 @@ header .header-info .left p {
   background-color: #fff;
 }
 
-.happyCouple .box .box-info:hover {
+main .happyCouple .box .box-info:hover {
   background-position: center;
   color: #fff;
   z-index: 3;
   padding: 60px;
 }
 
-.happyCouple .box .box-info:hover a {
+main .happyCouple .box .box-info:hover a {
   color: #fff;
 }
 
-.happyCouple .box .box-info h4 {
+main .happyCouple .box .box-info h4 {
   font-weight: 700;
   margin-bottom: 0px;
 }
 
-.happyCouple .box .box-info span {
+main .happyCouple .box .box-info span {
   font-size: 10px;
   font-family: 'Josefin Sans', sans-serif;
 }
 
-.happyCouple .box .box-info p {
+main .happyCouple .box .box-info p {
   margin-top: 20px;
 }
 
-.happyCouple .box .box-info a {
+main .happyCouple .box .box-info a {
   text-decoration: none;
 }
 
-.happyCouple .box .box-img {
+main .happyCouple .box .box-img {
   position: relative;
   z-index: 2;
   margin-left: -120px;
@@ -271,11 +286,11 @@ header .header-info .left p {
   padding: 5px;
 }
 
-.happyCouple .box-3 {
+main .happyCouple .box-3 {
   margin-top: 100px;
 }
 
-.happyCouple .box-3 .box-info {
+main .happyCouple .box-3 .box-info {
   position: relative;
   z-index: 3;
   -webkit-box-shadow: 0px 3px 12px 0px #EBEBEB;
@@ -286,141 +301,142 @@ header .header-info .left p {
   background-color: #fff;
 }
 
-.happyCouple .box-3 .box-info:hover {
+main .happyCouple .box-3 .box-info:hover {
   background: -webkit-gradient(linear, left top, right top, from(rgba(217, 134, 180, 0.9)), to(rgba(217, 134, 180, 0.9))), url(../img/happuCouple/03.png);
   background: linear-gradient(to right, rgba(217, 134, 180, 0.9), rgba(217, 134, 180, 0.9)), url(../img/happuCouple/03.png);
   color: #fff;
 }
 
-.happyCouple .box-3 .box-info:hover a {
+main .happyCouple .box-3 .box-info:hover a {
   color: #fff;
 }
 
-.happyCouple .box-3 .box-info h4 {
+main .happyCouple .box-3 .box-info h4 {
   font-weight: 700;
   margin-bottom: 0px;
 }
 
-.happyCouple .box-3 .box-info span {
+main .happyCouple .box-3 .box-info span {
   font-size: 10px;
   font-family: 'Josefin Sans', sans-serif;
 }
 
-.happyCouple .box-3 .box-info p {
+main .happyCouple .box-3 .box-info p {
   margin-top: 20px;
 }
 
-.happyCouple .box-3 .box-info a {
+main .happyCouple .box-3 .box-info a {
   text-decoration: none;
 }
 
-.happyCouple .box-3 .box-img {
+main .happyCouple .box-3 .box-img {
   position: relative;
   z-index: 2;
   background: #EF76AA;
   padding: 5px;
 }
 
-.apps {
+main .apps {
   background: -webkit-gradient(linear, left top, right top, from(rgba(217, 134, 180, 0.8)), to(rgba(217, 134, 180, 0.8))), url(../img/bg/bg.png);
   background: linear-gradient(to right, rgba(217, 134, 180, 0.8), rgba(217, 134, 180, 0.8)), url(../img/bg/bg.png);
   color: #fff;
 }
 
-.apps .apps-img {
+main .apps .apps-img {
   margin-top: 40px;
 }
 
-.apps .apps-img img {
+main .apps .apps-img img {
   width: 200px;
 }
 
-.story {
+main .story {
   background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.9))), url(../img/bg/bg-01.png);
   background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../img/bg/bg-01.png);
   background-position: top;
   background-size: cover;
+  position: relative;
+  z-index: 2;
 }
 
-.story .story-layer-img img {
-  margin-top: -173px;
+main .story .story-layer-img img {
   float: right;
+  position: relative;
+  z-index: 1;
+  margin-top: -170px;
 }
 
-.story .section-header p {
+main .story .section-header p {
   width: 100%;
 }
 
-.story .story-box {
+main .story .story-box {
   margin-top: 60px;
 }
 
-.story .story-box .story-img {
-  position: relative;
-  z-index: 1;
+main .story .story-box .story-img {
   border: 3px solid #EF76AA;
 }
 
-.story .story-box .story-img img {
-  position: relative;
-  z-index: 2;
+main .story .story-box .story-img img {
   border: 3px solid #EF76AA;
   margin-left: 35px;
   margin-top: 35px;
   margin-bottom: -35px;
 }
 
-.story .story-box .story-info {
+main .story .story-box .story-info {
   margin: 60px;
 }
 
-.story .story-box .story-info h4 {
+main .story .story-box .story-info h4 {
   font-weight: 700;
   font-size: 35px;
 }
 
-.story .story-box .story-info span {
+main .story .story-box .story-info span {
   font-size: 18px;
   font-family: 'Josefin Sans', sans-serif;
 }
 
-.story .story-box .story-info p {
+main .story .story-box .story-info p {
   margin-top: 20px;
   font-size: 23px;
   text-align: justify;
 }
 
-.review {
+main .review {
   background: -webkit-gradient(linear, left top, right top, from(rgba(195, 228, 244, 0.9)), to(rgba(195, 228, 244, 0.9))), url(../img/bg/bg-02.png);
   background: linear-gradient(to right, rgba(195, 228, 244, 0.9), rgba(195, 228, 244, 0.9)), url(../img/bg/bg-02.png);
   background-size: cover;
 }
 
-.review .review-slide {
+main .review .review-slide {
   text-align: center;
 }
 
-.review .review-slide h2 {
+main .review .review-slide h2 {
   font-size: 70px;
 }
 
-.review .review-slide .slider-iteam {
+main .review .review-slide .slider-iteam {
   margin-top: 40px;
 }
 
-.review .review-slide .slider-iteam .slide-img {
+main .review .review-slide .slider-iteam .slide-img {
   width: 80px;
   height: 80px;
   margin: 0 auto;
   margin-bottom: 10px;
 }
 
-.review .review-slide .slider-iteam p {
+main .review .review-slide .slider-iteam p {
   font-size: 20px;
   width: 80%;
   margin: 0 auto;
 }
 
+/* Footer*/
 footer {
   padding: 50px 0;
   text-align: center;
