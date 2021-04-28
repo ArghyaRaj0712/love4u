@@ -31,6 +31,10 @@
             .left {
                 padding: 90px 50px 0px 50px;
 
+                h1 {
+                    font-size: 50px;
+                }
+
                 p {
                     font-size: 16px;
                 }
@@ -48,7 +52,7 @@
                 }
         
                 h2 {
-                    font-size: 50px;
+                    font-size: 18px;
                 }
             }
 
@@ -88,7 +92,7 @@
     
     main {
         .happyCouple {
-            padding: 195px 0;
+            padding: 220px 0 100px 0;
 
             .happyCouple-layer-img {
                 img {
@@ -129,8 +133,12 @@
                 }
             }
 
+            .layer-1 {
+                margin-bottom: 60px;
+            }
+
             .story-box {
-                margin-top: 40px;
+                margin-top: 0;
                 
                 .story-img {
     
@@ -139,10 +147,18 @@
                         margin-top: 10px;
                         margin-bottom: -15px;
                     }
+
+                    &:hover {
+                        img {
+                            margin-left: 10px;
+                            margin-top: -15px;
+                            margin-bottom: 15px;
+                        }
+                    }
                 }
     
                 .story-info {
-                    margin: 40px 20px;
+                    margin: 40px 20px 20px 20px;
     
                     h4 {
                         font-size: 24px;

@@ -6,6 +6,21 @@ $text-color: #223244;
 $secondText-color: #000;
 $hover-color: #fff;
 
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
 /* Main Styel */
 html {
     scroll-behavior: smooth;
@@ -17,7 +32,7 @@ p,a {
     font-weight: 400;
 }
 
-h2,h3,h4,h5,h6 {
+h1,h2,h3,h4,h5,h6 {
     font-family: 'Dancing Script', cursive;
     font-weight: 700;
 }
@@ -44,6 +59,7 @@ section {
         margin: 0 auto;
     }
 }
+
 
 /* Header Start */
 header {
@@ -89,13 +105,47 @@ header {
     // Header-info
     .header-info {
         padding: 0px 0 80px 0;
+        color: $hover-color;
+
         // Left Side
         .left {
             padding: 90px 50px;
 
+            h1 {
+                font-size: 115px;
+                text-shadow: 3px 3px $bg-color;
+            }
+
             p {
                 font-size: 23px;
                 margin-top: 25px;
+            }
+        }
+
+        .right {
+            img:hover {
+                animation: shake 0.7s;
+                animation-iteration-count: infinite;
+            }
+        }
+    }
+}
+
+// modal-content
+.modal-content {
+    background: linear-gradient(to right, rgba(154,176,212, 0.9), rgba(217, 134, 180, 0.9));
+    color: $hover-color;
+
+    form {
+        font-family: 'Josefin Sans', sans-serif;
+
+        .form-group {
+            a {
+                text-decoration: none;
+            }
+
+            p {
+                margin-top: 20px;
             }
         }
     }
@@ -119,7 +169,9 @@ header {
             }
     
             h2 {
-                font-size: 95px;
+                font-size: 28px;
+                font-family: 'Josefin Sans', sans-serif;
+                font-weight: 300;
             }
     
             a {
@@ -185,6 +237,10 @@ header {
     
                 input.button {
                     margin-top: 20px;
+
+                    &:hover {
+                        opacity: 0.6;
+                    }
                 }
     
                 // PlaceHolder
@@ -362,7 +418,7 @@ main {
             margin-top: 40px;
 
             img {
-                width: 200px;
+                width: 180px;
             }
         }
     }
@@ -410,6 +466,18 @@ main {
                     margin-top: 35px;
                     margin-bottom: -35px;
                 }
+
+                &:hover {
+                    img {
+                        margin-top: -35px;
+                        margin-bottom: 35px;
+                        transition: 0.7s;
+                        -webkit-transition: 0.7s;
+                        -moz-transition: 0.7s;
+                        -ms-transition: 0.7s;
+                        -o-transition: 0.7s;
+                    }
+                }
             }
 
             // story-info
@@ -422,13 +490,13 @@ main {
                 }
         
                 span {
-                    font-size: 18px;
+                    font-size: 16px;
                     font-family: 'Josefin Sans', sans-serif;
                 }
         
                 p {
                     margin-top: 20px;
-                    font-size: 23px;
+                    font-size: 18px;
                     text-align: justify;
                 }
             }
