@@ -52,11 +52,15 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#review">review</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="modal" data-target="#loginModal">Login</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </div>
+
         <!-- Header Info -->
         <div class="header-info">
             <div class="container">
@@ -64,7 +68,7 @@
                     <div class="col-md-7">
                         <!-- Left Side -->
                         <div class="left">
-                            <img src="img/header-img/leftImg.png" alt="Real Love Never End..." class="responsive-img">
+                            <h1>Real Love Never End...</h1>
                             <p>Let us always meet each other with smile, for the smile is the beginning of love.</p>
                         </div>
                     </div>
@@ -80,6 +84,41 @@
     </header>
     <!-- Header End -->
 
+    <!-- Modal Start -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Please LogIn for Matchmaking & Marriage Service</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                            <small id="emailHelp" class="form-text">We'll never share your Password with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                            <a href="#">Forgot Your Password?</a>
+                        </div>
+                        <button type="submit" class="btn btn-primary" onclick="button()">LogIn</button>
+                        <div class="form-group">
+                            <p>Don't have account?<a href="#"> Signup Now</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal End -->
+
     <!-- Header Bottom Start -->
     <div class="header-bottom">
         <div class="container">
@@ -92,7 +131,7 @@
                                 <!-- Info -->
                                 <div class="info">
                                     <h3>Introducing For Best Match</h3>
-                                    <h2>Connecting</h2>
+                                    <h2>Connecting singles across the world to their ideal partner.</h2>
                                     <a href="#">For Enjoy Login</a>
                                     <hr>
                                     <hr class="second-hr">
@@ -139,7 +178,7 @@
                                             </div>
                                             <!-- Button -->
                                             <div class="col-md-12">
-                                                <input type="button" class="button" value="Take a Chance">
+                                                <input type="button" class="button" value="Take a Chance" onclick="btn()">
                                             </div>
                                         </div> 
                                     </form>
@@ -297,92 +336,98 @@
                     <h2>Our Latest Story</h2>
                     <p>We publish every month in our weibsites letest coupal stories</p>
                 </div>
-                <!-- Story Box -->
-                <div class="story-box">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <!-- Story Img -->
-                            <div class="story-img">
-                                <img src="img/story/01.png" alt="" class="responsive-img">
-                            </div>
-                        </div>
-                        <div class="col-md-8">
-                            <!-- Story Info -->
-                            <div class="story-info">
-                                <div class="row">
-                                    <div class="col-md-8">
-                                        <h4>Our First Met</h4>
-                                        <span>23 Sept 2013</span>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <img src="img/clipsArt/01.png" alt="">
+                <div class="row">
+                    <div class="col-md-12 layer-1">
+                        <!-- Story Box -->
+                        <div class="story-box">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <!-- Story Img -->
+                                    <div class="story-img">
+                                        <img src="img/story/01.png" alt="" class="responsive-img">
                                     </div>
                                 </div>
-                                <p>Etiam ut ultrices nibh. Etiam aliquam mauris non hendrerit faucibus. Proin pulvinar congue ex, vitae commodo. Phasellus condimentum, mi ut sodales gravida.Lorem ipsum dolor sit amet etiam. </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Story Box -->
-                <div class="story-box">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <!-- Story Img -->
-                            <div class="story-img">
-                                <img src="img/story/02.png" alt="" class="responsive-img">
-                            </div>
-                        </div>
-                        <div class="col-md-8">
-                            <!-- Story info -->
-                            <div class="story-info">
-                                <div class="row">
-                                    <div class="col-md-8">
-                                        <h4>Our First Dating</h4>
-                                        <span>23 Sept 2013</span>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <img src="img/clipsArt/02.png" alt="">
+                                <div class="col-md-8">
+                                    <!-- Story Info -->
+                                    <div class="story-info">
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <h4>Our First Met</h4>
+                                                <span>23 Sept 2013</span>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <img src="img/clipsArt/01.png" alt="">
+                                            </div>
+                                        </div>
+                                        <p>Etiam ut ultrices nibh. Etiam aliquam mauris non hendrerit faucibus. Proin pulvinar congue ex, vitae commodo. Phasellus condimentum, mi ut sodales gravida.Lorem ipsum dolor sit amet etiam. </p>
                                     </div>
                                 </div>
-                                <p>Etiam ut ultrices nibh. Etiam aliquam mauris non hendrerit faucibus. Proin pulvinar congue ex, vitae commodo. Phasellus condimentum, mi ut sodales gravida.Lorem ipsum dolor sit amet etiam. </p>
+                            </div>
+                        </div>
+                        <!-- Story Box -->
+                        <div class="story-box">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <!-- Story info -->
+                                    <div class="story-info">
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <h4>Our First Dating</h4>
+                                                <span>23 Sept 2013</span>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <img src="img/clipsArt/02.png" alt="">
+                                            </div>
+                                        </div>
+                                        <p>Etiam ut ultrices nibh. Etiam aliquam mauris non hendrerit faucibus. Proin pulvinar congue ex, vitae commodo. Phasellus condimentum, mi ut sodales gravida.Lorem ipsum dolor sit amet etiam. </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <!-- Story Img -->
+                                    <div class="story-img">
+                                        <img src="img/story/02.png" alt="" class="responsive-img">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- Story Box -->  
-                <div class="story-box">
-                    <div class="row">
-                        <div class="col-md-8">
-                            <!-- Story Info -->
-                            <div class="story-info">
-                                <h4>How She Proposed</h4>
-                                <span>23 Sept 2013</span>
-                                <p>Etiam ut ultrices nibh. Etiam aliquam mauris non hendrerit faucibus. Proin pulvinar congue ex, vitae commodo. Phasellus condimentum, mi ut sodales gravida.Lorem ipsum dolor sit amet etiam. </p>
+                    <div class="col-md-12">
+                        <!-- Story Box -->  
+                        <div class="story-box">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <!-- Story img -->
+                                    <div class="story-img">
+                                        <img src="img/story/03.png" alt="" class="responsive-img">
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <!-- Story Info -->
+                                    <div class="story-info">
+                                        <h4>How She Proposed</h4>
+                                        <span>23 Sept 2013</span>
+                                        <p>Etiam ut ultrices nibh. Etiam aliquam mauris non hendrerit faucibus. Proin pulvinar congue ex, vitae commodo. Phasellus condimentum, mi ut sodales gravida.Lorem ipsum dolor sit amet etiam. </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <!-- Story img -->
-                            <div class="story-img">
-                                <img src="img/story/03.png" alt="" class="responsive-img">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Story Box -->
-                <div class="story-box">
-                    <div class="row">
-                        <div class="col-md-8">
-                            <!-- Story info -->
-                            <div class="story-info">
-                                <h4>Now We Together</h4>
-                                <span>23 Sept 2013</span>
-                                <p>Etiam ut ultrices nibh. Etiam aliquam mauris non hendrerit faucibus. Proin pulvinar congue ex, vitae commodo. Phasellus condimentum, mi ut sodales gravida.Lorem ipsum dolor sit amet etiam. </p>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <!-- Story img -->
-                            <div class="story-img">
-                                <img src="img/story/04.png" alt="" class="responsive-img">
+                        <!-- Story Box -->
+                        <div class="story-box">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <!-- Story info -->
+                                    <div class="story-info">
+                                        <h4>Now We Together</h4>
+                                        <span>23 Sept 2013</span>
+                                        <p>Etiam ut ultrices nibh. Etiam aliquam mauris non hendrerit faucibus. Proin pulvinar congue ex, vitae commodo. Phasellus condimentum, mi ut sodales gravida.Lorem ipsum dolor sit amet etiam. </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <!-- Story img -->
+                                    <div class="story-img">
+                                        <img src="img/story/04.png" alt="" class="responsive-img">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -449,6 +494,8 @@
     </button> -->
     
 
+    <!--SweetAlert JS-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- Separate Popper and Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" ></script>
@@ -458,6 +505,7 @@
     <script src="owlCarousel/owl.carousel.min.js" ></script>
     <!-- Custome JS -->
     <script src="js/top.js" ></script>
+    <script src="js/alert.js" ></script>
     <script src="js/main.js" ></script>
 </body>
 </html>
